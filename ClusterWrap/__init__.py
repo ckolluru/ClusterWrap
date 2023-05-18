@@ -1,6 +1,6 @@
 from shutil import which
 import os
-from .clusters import janelia_lsf_cluster, local_cluster
+from .clusters import janelia_lsf_cluster, local_cluster, cwru_slurm_cluster
 
 cluster = local_cluster
 
