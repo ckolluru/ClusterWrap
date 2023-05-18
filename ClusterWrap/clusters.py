@@ -335,8 +335,8 @@ class cwru_slurm_cluster(_cluster):
             maximum_jobs=self.max_workers,
         )
 
-        # give feedback to user
-        mn, mx, nc = self.min_workers, self.max_workers, self.ncpus  # shorthand
-        cost = round(mx * nc * self.HOURLY_RATE_PER_CORE, 2)
-        print(f"Cluster adapting between {mn} and {mx} workers with {nc} cores per worker")
-        print(f"*** This cluster has an upper bound cost of {cost} dollars per hour ***")
+#         # give feedback to user
+#         mn, mx, nc = self.min_workers, self.max_workers, self.ncpus  # shorthand
+#         cost = round(mx * nc * self.HOURLY_RATE_PER_CORE, 2)
+#         print(f"Cluster adapting between {mn} and {mx} workers with {nc} cores per worker")
+#         print(f"*** This cluster has an upper bound cost of {cost} dollars per hour ***")
