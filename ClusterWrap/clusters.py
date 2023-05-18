@@ -118,8 +118,7 @@ class janelia_lsf_cluster(_cluster):
         CWD = os.getcwd()
         PID = os.getpid()
         if "local_directory" not in kwargs:
-            kwargs["local_directory"] = f"/
-            /{USER}/"
+            kwargs["local_directory"] = f"/scratch/{USER}/"
         if "log_directory" not in kwargs:
             log_dir = f"{CWD}/dask_worker_logs_{PID}/"
             Path(log_dir).mkdir(parents=False, exist_ok=True)
