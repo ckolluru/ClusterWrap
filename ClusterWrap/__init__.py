@@ -8,4 +8,5 @@ if which('bsub') is not None:
     if os.system('bsub -V') != 32512:
         cluster = janelia_lsf_cluster
 
-
+if which('sbatch') is not None:
+    cluster = cwru_slurm_cluster
